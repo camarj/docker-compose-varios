@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    container_name: nginx2
+    ports:
+      - "8081:80"
+    volumes:
+      - "/home/camarj/Documentos/Cursos/Docker/Docker-compose/docker-compose-2018-07-17/docker-compose/html:/usr/share/nginx/html"
+    image: nginx
